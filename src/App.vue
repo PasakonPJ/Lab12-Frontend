@@ -39,6 +39,7 @@
   </div>
 
   <!-- new element -->
+  <!-- new element -->
   <router-view />
 </template>
 <script>
