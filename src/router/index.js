@@ -12,6 +12,7 @@ import NProgress from 'nprogress'
 import EventService from '@/services/EventService.js'
 import GStore from '@/store'
 import OrganizerService from '@/services/OrganizerService.js'
+import Login from '@/views/LoginForm.vue'
 
 const routes = [
   {
@@ -19,6 +20,12 @@ const routes = [
     name: 'EventList',
     component: EventList,
     props: (route) => ({ page: parseInt(route.query.page) || 1 })
+  },
+  {
+    path: '/login',
+     name: 'Login',
+     component: Login
+    
   },
   {
     path: '/about',
