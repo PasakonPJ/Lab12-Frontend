@@ -8,6 +8,7 @@ import camelCase from 'lodash/camelCase'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from './plugins/foint-awesome'
+import '@/services/AxiosInterceptorSetup.js'
 
 const requireComponent = require.context(
   './components',
@@ -34,4 +35,3 @@ app
   .component('font-awesome-icon', FontAwesomeIcon)
   .provide('GStore', GStore)
   .mount('#app')
-
