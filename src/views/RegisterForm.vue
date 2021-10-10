@@ -100,9 +100,9 @@ export default {
       this.message = ''
       //   this.successful = true
       this.loading = true
-      this.$router.push({
-        name: 'EventList'
-      })
+      // this.$router.push({
+      //   name: 'EventList'
+      // })
     }
   }
 }
